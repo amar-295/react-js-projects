@@ -5,36 +5,33 @@ import ThemeBtn from "./components/ThemeBtn";
 import Card from "./components/Card";
 
 function App() {
-
-  const [themeMode, setThemeMode] = useState("light")
+  const [themeMode, setThemeMode] = useState("light");
 
   const lightTheme = () => {
-    setThemeMode("light")
-  }
+    setThemeMode("light");
+  };
 
   const darkTheme = () => {
-    setThemeMode("dark")
-  }
+    setThemeMode("dark");
+  };
 
   // actual chnage in theme
 
   useEffect(() => {
-    document.querySelector('html').classList.remove("light", "dark")
-    document.querySelector('html').classList.add(themeMode)
-
-  }, [themeMode])
-  
+    document.querySelector("html").classList.remove("light", "dark");
+    document.querySelector("html").classList.add(themeMode);
+  }, [themeMode]);
 
   return (
-    <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
-    <div className="flex flex-wrap min-h-screen items-center">
-      <div className="w-full">
-        <div className="w-full max-w-sm mx-auto flex justify-end mb-4"></div>
-        <ThemeBtn/>
-        <div className="w-full max-w-sm mx-auto"></div>
-        <Card/>
+    <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
+      <div className="flex flex-col min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 transition-colors duration-300 px-4">
+        <div className="w-full max-w-sm flex justify-end mb-4">
+          <ThemeBtn />
+        </div>
+        <div className="w-full max-w-sm">
+          <Card />
+        </div>
       </div>
-    </div>
     </ThemeProvider>
   );
 }
