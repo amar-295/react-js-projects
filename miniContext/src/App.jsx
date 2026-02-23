@@ -9,9 +9,9 @@ function App() {
       <div className="min-h-screen bg-[#0f172a] flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-pink-500/30">
         <div className="text-center mb-10 text-white">
           <h1 className="text-4xl font-extrabold sm:text-5xl tracking-tight mb-4">
-            Mini{" "}
-            <span className="text-transparent bg-clip-text bg-linear-gradient-to-r from-pink-400 to-indigo-400">
-              Context
+            React Context{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-indigo-400">
+              API
             </span>
           </h1>
           <p className="text-slate-400 max-w-sm mx-auto">
