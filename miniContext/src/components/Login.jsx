@@ -15,7 +15,7 @@ function Login() {
   return (
     <div className="w-full bg-slate-800/50 backdrop-blur-md shadow-2xl border border-slate-700/50 rounded-2xl p-8 mb-6 text-white">
       <h2 className="text-3xl font-bold mb-6 text-center text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-indigo-400">
-        Sign In
+        Login
       </h2>
 
       <div className="flex flex-col gap-4">
