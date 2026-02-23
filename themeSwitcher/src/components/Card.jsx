@@ -6,11 +6,11 @@ export default function Card() {
       <div className="relative h-64 overflow-hidden group">
         <img
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1000"
-          alt="Product"
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000"
+          alt="Sony Headphones"
         />
         <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-gray-900 dark:text-white shadow-sm">
-          New Arrival
+          Best Seller
         </div>
       </div>
 
@@ -18,10 +18,11 @@ export default function Card() {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-1">
-              Minimalist Desk Essentials
+              Sony WH-1000XM4
             </h5>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              The perfect balance of form and function.
+              Industry-leading noise canceling with dual noise sensor
+              technology.
             </p>
           </div>
         </div>
@@ -40,13 +41,13 @@ export default function Card() {
             ))}
           </div>
           <span className="ml-2 text-xs font-medium text-gray-400">
-            4.9 (1.2k reviews)
+            4.9 (2.5k reviews)
           </span>
         </div>
 
         <div className="flex items-center justify-between mt-auto">
           <span className="text-3xl font-extrabold text-gray-900 dark:text-white">
-            $149.00
+            $348.00
           </span>
           <button className="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 font-bold rounded-xl text-sm px-6 py-3 transition-colors duration-200 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-lg shadow-indigo-500/20">
             Buy Now
