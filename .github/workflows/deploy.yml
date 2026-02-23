@@ -44,7 +44,8 @@ jobs:
       - name: Build miniContext
         run: cd miniContext && npm install && npm run build
 
-      # currencyConverter and todoContext builds removed as they are not tracked in the repo yet
+      - name: Build todoContext
+        run: cd todoContext && npm install && npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
