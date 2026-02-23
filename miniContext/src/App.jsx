@@ -1,6 +1,6 @@
 import "./App.css";
-import Login from "./components/Login";
-import Profile from "./components/Profile";
+import Login from "./Components/Login";
+import Profile from "./Components/Profile";
 import UserContextProvider from "./Context/UserContextProvider";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div className="text-center mb-10 text-white">
           <h1 className="text-4xl font-extrabold sm:text-5xl tracking-tight mb-4">
             Mini{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">
+            <span className="text-transparent bg-clip-text bg-linear-gradient-to-r from-pink-400 to-indigo-400">
               Context
             </span>
           </h1>
