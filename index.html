@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React mini-projects hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2), 0 8px 10px -6px rgba(56, 189, 248, 0.1);
+            border-color: rgba(56, 189, 248, 0.4);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="p-6 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16 mt-8">
+            <h1
+                class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+                React JS Projects</h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">A collection of hands-on mini-projects built
+                mapping my React learning journey.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <a href="./bgChanger/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                <div
+                    class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
+                    🎨</div>
+                <h2 class="text-2xl font-semibold mb-2">Background Changer</h2>
+                <p class="text-slate-400 mb-4 text-sm leading-relaxed">A simple UI where the background color changes
+                    dynamically using the useState hook and Tailwind CSS.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-cyan-900/50 text-cyan-300 px-3 py-1 rounded-full">useState</span>
+                    <span class="bg-cyan-900/50 text-cyan-300 px-3 py-1 rounded-full">Tailwind</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="./passwordGenerator/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                <div
+                    class="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
+                    🔐</div>
+                <h2 class="text-2xl font-semibold mb-2">Password Generator</h2>
+                <p class="text-slate-400 mb-4 text-sm leading-relaxed">Secure random password generator exploring
+                    useCallback, useEffect, and useRef hooks with a copy feature.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-purple-900/50 text-purple-300 px-3 py-1 rounded-full">Hooks</span>
+                    <span class="bg-purple-900/50 text-purple-300 px-3 py-1 rounded-full">Clipboard API</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="./reactRouter/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                <div
+                    class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
+                    🛣️</div>
+                <h2 class="text-2xl font-semibold mb-2">React Router</h2>
+                <p class="text-slate-400 mb-4 text-sm leading-relaxed">Implementing client-side routing, nested routes,
+                    and data loaders using react-router-dom.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-emerald-900/50 text-emerald-300 px-3 py-1 rounded-full">react-router-dom</span>
+                    <span class="bg-emerald-900/50 text-emerald-300 px-3 py-1 rounded-full">Routing</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="./themeSwitcher/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                <div
+                    class="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
+                    🌗</div>
+                <h2 class="text-2xl font-semibold mb-2">Theme Switcher</h2>
+                <p class="text-slate-400 mb-4 text-sm leading-relaxed">Global Light/Dark mode toggle implementation
+                    using React Context API and Tailwind's dark variants.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-amber-900/50 text-amber-300 px-3 py-1 rounded-full">Context API</span>
+                    <span class="bg-amber-900/50 text-amber-300 px-3 py-1 rounded-full">Provider</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="./miniContext/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                <div
+                    class="w-12 h-12 bg-pink-500/20 text-pink-400 rounded-xl flex items-center justify-center mb-4 text-2xl">
+                    📦</div>
+                <h2 class="text-2xl font-semibold mb-2">Mini Context</h2>
+                <p class="text-slate-400 mb-4 text-sm leading-relaxed">A minimal login/profile flow built to learn
+                    Context API basics and sidestep prop drilling.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-pink-900/50 text-pink-300 px-3 py-1 rounded-full">useContext</span>
+                    <span class="bg-pink-900/50 text-pink-300 px-3 py-1 rounded-full">State Mgmt</span>
+                </div>
+            </a>
+
+            <!-- Project 6 (Untracked)
+            <a href="./currencyConverter/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                ... 
+            </a>
+            -->
+
+            <!-- Project 7 (Untracked)
+            <a href="./todoContext/dist/index.html" class="card rounded-2xl p-6 block text-left">
+                ...
+            </a> 
+            -->
+        </div>
+
+        <footer class="mt-20 text-center text-slate-500 text-sm border-t border-slate-800 pt-8">
+            <p>Built with ❤️ using React</p>
+        </footer>
+    </div>
+</body>
+
+</html>
